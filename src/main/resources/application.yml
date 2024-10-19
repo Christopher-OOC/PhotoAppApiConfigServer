@@ -8,7 +8,5 @@ spring:
       server:
         git:
           uri: https://github.com/Christopher-OOC/PhotoAppConfiguration.git
-          username: Christopher-OOC
-          password: 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
+          skipSslValidation: true
           cloneOnStart: true
-          defaultLabel: main
