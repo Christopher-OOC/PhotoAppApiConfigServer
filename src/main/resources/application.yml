@@ -3,17 +3,22 @@ server:
 spring:
   application:
     name: PhotoAppApiConfigServer
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   cloud:
     config:
       server:
         git:
           uri: https://github.com/Christopher-OOC/PhotoAppConfigServer
           username: Christopher-OOC
-          password:
+          password: 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
           defaultLabel: main
           cloneOnStart: true
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: busrefresh
+management:
+  endpoints:
+    web:
+      exposure:
+        include: busrefresh
