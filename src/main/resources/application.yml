@@ -8,9 +8,13 @@ spring:
     port: 5672
     username: guest
     password: guest
+  profiles:
+    active: native
   cloud:
     config:
       server:
+        native:
+          searchLocations: file:///C:/Users/Christopher-JavaLord/Desktop/dev
         git:
           uri: https://github.com/Christopher-OOC/PhotoAppConfigServer
           username: Christopher-OOC
