@@ -1,3 +1,5 @@
+encrypt:
+  key: ghDFGHJlkkhjghfjhg8kjLkghhg5hjFGGHfd6hgg7Yg
 server:
   port: 8012
 spring:
@@ -17,7 +19,7 @@ spring:
           searchLocations: file:///C:/Users/Christopher-JavaLord/Desktop/dev
         git:
           uri: https://github.com/Christopher-OOC/PhotoAppConfigServer
-          username: Christopher-OOC
+          username: {{cipher}f33c0aac4caa138958b4eb92865f7cd2cb69a8c0d96c9b2af77903f750cf6c17}-OOC
           password: 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
           defaultLabel: main
           cloneOnStart: true
