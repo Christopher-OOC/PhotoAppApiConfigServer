@@ -1,5 +1,14 @@
+#
+#  keytool -genkeypair -alias apiEncryptionKey -keyalg RSA -dname "CN=Olojede Christopher,OU=
+#  API Development,O=olojedechristopher24@gmail.com,L=Lagos,S=Lagos,C=Nigeria" -keypass christopher24 -keystore apiEncryption.jks -storepass christopher24
+
+#  keytool -importkeystore -srckeystore myApiEncryptionKey.jks -destkeystore myApiEncryptionKey.jks -deststoretype pkcs12
 encrypt:
-  key: ghDFGHJlkkhjghfjhg8kjLkghhg5hjFGGHfd6hgg7Yg
+  keyStore:
+    location: file:///${user.home}/Desktop/dev/myApiEncryptionKey.jks
+    password: christopher24
+    alias: apiEncryptionKey
+#  key: ghDFGHJlkkhjghfjhg8kjLkghhg5hjFGGHfd6hgg7Yg
 server:
   port: 8012
 spring:
@@ -19,7 +28,7 @@ spring:
           searchLocations: file:///C:/Users/Christopher-JavaLord/Desktop/dev
         git:
           uri: https://github.com/Christopher-OOC/PhotoAppConfigServer
-          username: {{cipher}f33c0aac4caa138958b4eb92865f7cd2cb69a8c0d96c9b2af77903f750cf6c17}-OOC
+          username: Christopher-OOC
           password: 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
           defaultLabel: main
           cloneOnStart: true
