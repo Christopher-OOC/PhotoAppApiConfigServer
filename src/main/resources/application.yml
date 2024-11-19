@@ -8,7 +8,7 @@ encrypt:
     location: file:///${user.home}/Desktop/dev/myApiEncryptionKey.jks
     password: christopher24
     alias: apiEncryptionKey
-#  key: ghDFGHJlkkhjghfjhg8kjLkghhg5hjFGGHfd6hgg7Yg
+#  key: ghDFGHJlkkhjghfjhg8kjLkghhg5hjFGGHfd6hgg7Ygkfjd,n
 server:
   port: 8012
 spring:
